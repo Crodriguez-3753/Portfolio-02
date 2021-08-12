@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+/* page color palette */
+:root {
+    --primary:#c3073F;
+    --secondary:#1A1A1D;
+    --third: #950740;
+    --fourth:#c0c0c0;
+    --light:#fafbfb;
+    --dark: #1c1d21;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--light);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: larger;
+}
+
+header {
+    padding:15px 6% 15px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary);
+    box-shadow:0 5px 35px var(--third);
+}
+
+header h1 {
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+    background-color: var(--light);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.About-wrap {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.About-me {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+
+.About-me > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 8px solid var(--primary);
+    font-size: 6vw;
+    line-height: 1.1;
+}
+
+.About-me > div {
+    flex: 0 0 77%;
+}
+
+.About-me p {
+    margin-bottom: 20px;
+}
+
+.Project {
+    border: 5px solid var(--primary);
+    background-color: var(--secondary);
+    color: var(--light);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display:flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+}
+
