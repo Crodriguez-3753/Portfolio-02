@@ -192,3 +192,59 @@ main {
 #Project-4 {
     background-image: url();
 }
+
+/* end of portfolio images */
+@media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 7vw;
+    }
+    
+    header nav {
+    justify-content: center;
+    }
+    
+    .About-me > h2{
+        flex: 0 0 20%;
+
+    }
+    .About-me > div {
+      flex: 0 0 75%;
+      text-align: center;
+      justify-content: center;
+      font-size: 2.5vw;
+    }
+    
+    .contact > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Project,
+    .Project:first-child {
+        flex-basis: 100%;
+    }
+
+    .Project:first-child {
+        min-height: 150px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
