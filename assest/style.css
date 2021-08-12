@@ -133,3 +133,60 @@ main {
     transition: all 0.5s;
 }
 
+/* features for portfolio */
+.Project:hover {
+    background-color: var(--fourth);
+}
+
+.Project div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+}
+
+.Project h3 {
+    font-size: 1.6rem;
+}
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contact address a {
+    color: var(--secondary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+}
+
+.contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+}
+/* portfolio images */
+#Project-1 {
+    background-image: url();
+}
+
+#Project-2 {
+    background-image: url();
+}
+
+#Project-3 {
+    background-image: url();
+}
+
+#Project-4 {
+    background-image: url();
+}
